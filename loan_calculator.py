@@ -1,5 +1,4 @@
 from tkinter import *
-
 class LoanCalculator:
 
     def __init__(self):
