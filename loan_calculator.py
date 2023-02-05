@@ -43,5 +43,12 @@ class LoanCalculator:
         monthlyPayment = loanAmount * monthlyInterestRate / (1 - 1 / (1 + monthlyInterestRate) ** (numberOfYears * 12))
         return monthlyPayment;
         root = Tk()
+       
+    def delete_all(self):
+        self.monthlyPaymentVar.set('')
+        self.loanAmountVar.set('')
+        self.annualInterestReateVar.set('')
+        self.numberofYearsVar.set('')
+        self.totalPaymentVar.set('')
 
 LoanCalculator()
